@@ -1,0 +1,38 @@
+name: Publish release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag"
+        default: "v0.1.0-alpha"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify checksums
+        run: cd firmware && sha256sum -c SHA256SUMS.txt
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          gh release create "$TAG" firmware/US-mph/*.bin firmware/EU-UK-metric/*.bin firmware/SHA256SUMS.txt \
+            --title "Virtual Pet Wolf $TAG (LODESTAR ORION, Heltec V4)" \
+            --notes "Your own pocket wolf on a LODESTAR ORION radio. Heltec V4 (OLED) only.
+
+          Which file?
+          - US (miles per hour): ORION-WOLF_US-mph_...
+          - EU, UK and elsewhere (km/h): ORION-WOLF_EU-UK-metric_...
+          - fresh-install = first time on a radio. update = a radio that already has the wolf.
+
+          Flash with https://flasher.meshcore.io (Custom Firmware). Checksums are in SHA256SUMS.txt.
+
+          Created by Aries Thorne & Todd Steinhauer. LODESTAR ORION by FEAR REACTIVE. Built on MeshCore."
