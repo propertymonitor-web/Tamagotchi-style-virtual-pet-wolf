@@ -1,2 +1,80 @@
-# Tamagotchi-style-virtual-pet-wolf
-A Tamagotchi-style LoRa virtual pet wolf Meshcore Lodestar: Orion📡running communications.
+# Tamagotchi-style Virtual Pet Wolf
+
+A tiny wolf that lives on your **LODESTAR ORION** radio.
+
+It starts as a pup. Look after it, keep your radio on, and see who it grows up to be.
+No two wolves look alike, and it has a few surprises of its own. We're not going to list
+them all here. Where's the fun in that?
+
+> A LoRa mesh radio, a pocket pet, and a bit of mystery.
+> Built on [MeshCore](https://github.com/meshcore-dev/MeshCore) · **LODESTAR ORION** by FEAR REACTIVE
+> Created by **Aries Thorne & Todd Steinhauer**
+
+---
+
+## What you need
+
+* A **Heltec V4** radio (the one with the OLED screen). The wolf lives on that screen, so other boards won't show it.
+* A way to flash it: <https://flasher.meshcore.io> (choose **Custom Firmware**).
+* Optional, but half the fun: a friend with a second radio running the same firmware.
+
+## Which file?
+
+Pick the folder that matches how you like your speeds. The wolf is the same in both.
+
+| Folder | Speeds shown as | For |
+|---|---|---|
+| [`firmware/US-mph`](firmware/US-mph) | miles per hour | US |
+| [`firmware/EU-UK-metric`](firmware/EU-UK-metric) | kilometres per hour | EU, UK and everywhere else |
+
+Each folder has two files:
+
+* **`…fresh-install.bin`**: use this the first time you put the wolf on a radio.
+* **`…update.bin`**: use this later to update a radio that already has the wolf.
+
+(Radio frequency settings are not part of the firmware. Set your region's frequency in the
+MeshCore app as usual.)
+
+## Flashing
+
+1. Download the `fresh-install` file for your region.
+2. Open <https://flasher.meshcore.io> in Chrome or Edge, plug in your Heltec V4 over USB.
+3. Choose **Custom Firmware**, pick the file, and flash.
+4. When the radio restarts you will see the **ORION splash screen**, and then your wolf.
+
+Want to check your download? [`firmware/SHA256SUMS.txt`](firmware/SHA256SUMS.txt) has the checksums.
+
+## Using it
+
+Your wolf is the first screen after the splash.
+
+| Button | On the wolf screen |
+|---|---|
+| click | next page |
+| double click | screen off (any click wakes it) |
+| long press | look at the next wolf in your pack, if you have more than one |
+
+Everything else on the radio works exactly like normal MeshCore. Messages, channels, the lot.
+The wolf is just one extra page at the front.
+
+## A few hints (and only a few)
+
+* It grows up while the radio is **powered on**, so give it time.
+* It notices what your radio is doing.
+* Its looks come from your radio, so yours is one of a kind.
+* Leave it running and watch for a while. It doesn't do the same thing twice in a row.
+* Wolves are friendly. Other wolves on nearby radios might drop in.
+
+That's all you get.
+
+## Good to know
+
+* Your wolf is saved to the radio's flash, so it survives reboots. A sudden power cut can lose a little growth.
+* Visits between wolves only happen between radios that can hear each other directly, both running this firmware.
+* This is an early release. Found a bug, or a wolf behaving strangely? Please open an issue and tell us what your wolf was doing.
+
+## Credits
+
+* **LODESTAR ORION**: FEAR REACTIVE
+* **Wolf and splash**: created by Aries Thorne & Todd Steinhauer
+* Based on [MeshCore](https://github.com/meshcore-dev/MeshCore) (MIT licence)

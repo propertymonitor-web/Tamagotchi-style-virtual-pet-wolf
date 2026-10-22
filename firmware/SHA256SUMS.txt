@@ -1,0 +1,4 @@
+ecf52383aa37d2d1a872eba63a6d9e03787db1e6c1e9df15aec055e7e74abd0a  EU-UK-metric/ORION-WOLF_EU-UK-metric_heltec-v4_fresh-install.bin
+c18b4b9f2784418eeb929aa115d477e3ff37f29dc1ddac8e6c48c20874fdbef7  EU-UK-metric/ORION-WOLF_EU-UK-metric_heltec-v4_update.bin
+a41215e0ecbf00869cc41a9587de29d7324d381dd858413dc3c40bd41f7811f8  US-mph/ORION-WOLF_US-mph_heltec-v4_fresh-install.bin
+73f81bc40eabff95199bb11b4c442bdd84e36ec7ba62846369d806ba9ba7407c  US-mph/ORION-WOLF_US-mph_heltec-v4_update.bin
