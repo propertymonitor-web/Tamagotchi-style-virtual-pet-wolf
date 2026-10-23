@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       species:
-        description: "Folder name: Wolf, Fox, Cat, Bear, Pig, Alligator, Crocodile, Butterfly, Donkey, Unicorn, Dragon, Kitsune, Griffin, Phoenix or Mystery"
+        description: "Folder name: Wolf, Fox, Cat, Bear, Pig, Alligator, Crocodile, Butterfly, Donkey, Unicorn, Dragon, Kitsune, Griffin, Phoenix, Horse or Mystery"
         required: true
         type: string
       tag:

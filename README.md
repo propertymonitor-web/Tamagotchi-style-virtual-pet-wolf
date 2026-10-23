@@ -4,23 +4,24 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 
 | Pet | Folder | Release |
 |---|---|---|
-| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.3.1-alpha` |
-| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.3.1-alpha` |
-| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.3.1-alpha` |
-| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.3.1-alpha` |
-| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.3.1-alpha` |
-| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.3.1-alpha` |
-| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.3.1-alpha` |
-| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.3.1-alpha` |
-| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.4.0-alpha` |
-| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.4.0-alpha` |
-| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.4.0-alpha` |
-| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.4.0-alpha` |
-| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.4.0-alpha` |
-| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.4.0-alpha` |
-| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.4.0-alpha` |
+| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.5.0-alpha` |
+| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.5.0-alpha` |
+| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.5.0-alpha` |
+| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.5.0-alpha` |
+| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.5.0-alpha` |
+| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.5.0-alpha` |
+| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.5.0-alpha` |
+| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.5.0-alpha` |
+| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.5.0-alpha` |
+| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.5.0-alpha` |
+| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.5.0-alpha` |
+| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.5.0-alpha` |
+| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.5.0-alpha` |
+| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.5.0-alpha` |
+| 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v0.5.0-alpha` |
+| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.5.0-alpha` |
 
-Each pet only talks to its own kind, so a fox never confuses a wolf, and a crocodile never mistakes an alligator for family. Every one is different in its own way, and the
+Every kind of pet can drop in on every other kind, so a fox might visit a wolf and a dragon might call on a pig. Families are another matter: pets only start a family with their own kind. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
 
 **Eggs.** The dragon, griffin and phoenix start as an egg that hatches after 24 to 48 hours of the radio being switched on (it varies per pet). The **Mystery Egg** hatches
@@ -122,7 +123,7 @@ firmware the panel simply never appears. Your phone can stay connected over Blue
 * It notices what your radio is doing.
 * Its looks come from your radio, so yours is one of a kind.
 * Leave it running and watch for a while. It doesn't do the same thing twice in a row.
-* Wolves are friendly. Other wolves on nearby radios might drop in.
+* Pets are friendly. Other pets on nearby radios might drop in, whatever kind they are.
 
 That's all you get.
 
@@ -131,6 +132,16 @@ That's all you get.
 * Your pet is saved to the radio's flash, so its age and sex survive reboots and power cuts (at worst you lose a few minutes of growth). **Use the `update` file for later versions**: the `fresh-install` file is for a radio that has never had the pet, and may wipe the radio's storage, which starts a new pet.
 * Visits between wolves only happen between radios that can hear each other directly, both running this firmware.
 * This is an early release. Found a bug, or a wolf behaving strangely? Please open an issue and tell us what your wolf was doing.
+
+## What's new in 0.5.0
+
+* **Pets visit every other kind of pet.** A fox can now call on a wolf, a pig on a dragon, and so on. Pets still only start a family with their own kind.
+* A new pet: the **horse**.
+
+## What's new in 0.4.0
+
+* New pets: **donkey, unicorn, dragon, kitsune, griffin, phoenix**, each with its own tricks.
+* The **dragon, griffin and phoenix start as an egg**, and the **Mystery Egg** hatches into a surprise. Eggs hatch after 24 to 48 hours of the radio being on.
 
 ## What's new in 0.3.1
 
