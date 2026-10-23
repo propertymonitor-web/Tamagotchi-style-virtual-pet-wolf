@@ -4,13 +4,16 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 
 | Pet | Folder | Release |
 |---|---|---|
-| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `v0.1.0-alpha` |
-| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.1.0-alpha` |
-| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.1.0-alpha` |
-| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.1.0-alpha` |
-| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.1.0-alpha` |
+| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.2.0-alpha` |
+| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.2.0-alpha` |
+| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.2.0-alpha` |
+| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.2.0-alpha` |
+| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.1.0-alpha` |
+| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.1.0-alpha` |
+| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.1.0-alpha` |
+| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.2.0-alpha` |
 
-Each pet only talks to its own kind, so a fox never confuses a wolf. Every one is different in its own way, and the
+Each pet only talks to its own kind, so a fox never confuses a wolf, and a crocodile never mistakes an alligator for family. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
 
 A pet starts small. Look after it, keep your radio on, and see who it grows up to be.
@@ -63,7 +66,8 @@ Your wolf is the first screen after the splash.
 |---|---|
 | click | next page |
 | double click | screen off (any click wakes it) |
-| long press | look at the next wolf in your pack, if you have more than one |
+| long press | look at the next pet in your pack, if you have more than one |
+| **fast triple click** | from any other screen: straight back to your pet (on the pet screen it toggles the buzzer, as usual) |
 
 Everything else on the radio works exactly like normal MeshCore. Messages, channels, the lot.
 The wolf is just one extra page at the front.
@@ -83,6 +87,12 @@ That's all you get.
 * Your wolf is saved to the radio's flash, so it survives reboots. A sudden power cut can lose a little growth.
 * Visits between wolves only happen between radios that can hear each other directly, both running this firmware.
 * This is an early release. Found a bug, or a wolf behaving strangely? Please open an issue and tell us what your wolf was doing.
+
+## What's new in 0.2.0
+
+* Three new pets: **pig, alligator, crocodile**. They look different from each other, and each one has its own tricks.
+* **Fast triple click** takes you back to the pet from any other screen.
+* The alligator and crocodile show a short dedication card after the ORION splash.
 
 ## Credits
 
