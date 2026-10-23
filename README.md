@@ -4,22 +4,22 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 
 | Pet | Folder | Release |
 |---|---|---|
-| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.5.1-alpha` |
-| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.5.1-alpha` |
-| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.5.1-alpha` |
-| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.5.1-alpha` |
-| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.5.1-alpha` |
-| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.5.1-alpha` |
-| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.5.1-alpha` |
-| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.5.1-alpha` |
-| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.5.1-alpha` |
-| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.5.1-alpha` |
-| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.5.1-alpha` |
-| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.5.1-alpha` |
-| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.5.1-alpha` |
-| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.5.1-alpha` |
-| 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v0.5.1-alpha` |
-| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.5.1-alpha` |
+| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.6.0-alpha` |
+| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.6.0-alpha` |
+| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.6.0-alpha` |
+| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.6.0-alpha` |
+| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.6.0-alpha` |
+| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.6.0-alpha` |
+| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.6.0-alpha` |
+| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.6.0-alpha` |
+| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.6.0-alpha` |
+| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.6.0-alpha` |
+| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.6.0-alpha` |
+| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.6.0-alpha` |
+| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.6.0-alpha` |
+| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.6.0-alpha` |
+| 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v0.6.0-alpha` |
+| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.6.0-alpha` |
 
 Every kind of pet can drop in on every other kind, so a fox might visit a wolf and a dragon might call on a pig. Families are another matter: pets only start a family with their own kind. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
@@ -132,6 +132,12 @@ That's all you get.
 * Your pet is saved to the radio's flash, so its age and sex survive reboots and power cuts (at worst you lose a few minutes of growth). **Use the `update` file for later versions**: the `fresh-install` file is for a radio that has never had the pet, and may wipe the radio's storage, which starts a new pet.
 * Visits between wolves only happen between radios that can hear each other directly, both running this firmware.
 * This is an early release. Found a bug, or a wolf behaving strangely? Please open an issue and tell us what your wolf was doing.
+
+## What's new in 0.6.0
+
+* **Name your pet.** Open the dashboard, find **Your pet**, type a name (up to 7 characters) and press **Set name**. The name shows at the top of the radio's screen and on the dashboard. You need the USB cable and the dashboard to set it. It names the pet on the screen right now, so each pet in a family can have its own name.
+* The top line of the screen now reads like `F14mo Rex Wolf`: sex and age, the name, then the kind of pet. If it does not all fit, the kind is shortened or dropped.
+* Your pet's save has a new format. Pets from older versions load fine, but once a radio has run 0.6.0 an older firmware cannot read its pet, so keep using the update files.
 
 ## What's new in 0.5.1
 
