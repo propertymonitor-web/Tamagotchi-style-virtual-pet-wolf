@@ -3,9 +3,12 @@ name: Publish release
 on:
   workflow_dispatch:
     inputs:
+      species:
+        description: "Folder name: Wolf, Fox, Cat, Bear or Butterfly"
+        required: true
+        type: string
       tag:
         description: "Release tag"
-        default: "v0.1.0-alpha"
         required: true
         type: string
 
@@ -23,16 +26,19 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ inputs.tag }}
+          SP: ${{ inputs.species }}
         run: |
-          gh release create "$TAG" firmware/US-mph/*.bin firmware/EU-UK-metric/*.bin firmware/SHA256SUMS.txt \
-            --title "Virtual Pet Wolf $TAG (LODESTAR ORION, Heltec V4)" \
-            --notes "Your own pocket wolf on a LODESTAR ORION radio. Heltec V4 (OLED) only.
+          UP=$(echo "$SP" | tr a-z A-Z)
+          grep " $SP/" firmware/SHA256SUMS.txt > "SHA256SUMS-$SP.txt"
+          gh release create "$TAG" firmware/$SP/US-mph/*.bin firmware/$SP/EU-UK-metric/*.bin "SHA256SUMS-$SP.txt" \
+            --title "Virtual Pet $SP $TAG (LODESTAR ORION, Heltec V4)" \
+            --notes "A pocket $SP on a LODESTAR ORION radio. Heltec V4 (OLED) only.
 
           Which file?
-          - US (miles per hour): ORION-WOLF_US-mph_...
-          - EU, UK and elsewhere (km/h): ORION-WOLF_EU-UK-metric_...
-          - fresh-install = first time on a radio. update = a radio that already has the wolf.
+          - US (miles per hour): ORION-${UP}_US-mph_...
+          - EU, UK and elsewhere (km/h): ORION-${UP}_EU-UK-metric_...
+          - fresh-install = first time on a radio. update = a radio that already has this pet.
 
-          Flash with https://flasher.meshcore.io (Custom Firmware). Checksums are in SHA256SUMS.txt.
+          Flash with https://flasher.meshcore.io (Custom Firmware). Checksums are in SHA256SUMS-$SP.txt.
 
           Created by Aries Thorne & Todd Steinhauer. LODESTAR ORION by FEAR REACTIVE. Built on MeshCore."

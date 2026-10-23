@@ -1,8 +1,19 @@
-# Tamagotchi-style Virtual Pet Wolf
+# Tamagotchi-style Virtual Pets for LoRa
 
-A tiny wolf that lives on your **LODESTAR ORION** radio.
+A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 
-It starts as a pup. Look after it, keep your radio on, and see who it grows up to be.
+| Pet | Folder | Release |
+|---|---|---|
+| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `v0.1.0-alpha` |
+| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.1.0-alpha` |
+| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.1.0-alpha` |
+| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.1.0-alpha` |
+| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.1.0-alpha` |
+
+Each pet only talks to its own kind, so a fox never confuses a wolf. Every one is different in its own way, and the
+butterfly in particular has a long way to go before it's a butterfly.
+
+A pet starts small. Look after it, keep your radio on, and see who it grows up to be.
 No two wolves look alike, and it has a few surprises of its own. We're not going to list
 them all here. Where's the fun in that?
 
@@ -14,18 +25,18 @@ them all here. Where's the fun in that?
 
 ## What you need
 
-* A **Heltec V4** radio (the one with the OLED screen). The wolf lives on that screen, so other boards won't show it.
+* A **Heltec V4** radio (the one with the OLED screen). The pet lives on that screen, so other boards won't show it.
 * A way to flash it: <https://flasher.meshcore.io> (choose **Custom Firmware**).
 * Optional, but half the fun: a friend with a second radio running the same firmware.
 
 ## Which file?
 
-Pick the folder that matches how you like your speeds. The wolf is the same in both.
+Open your pet's folder, then pick the one that matches how you like your speeds. The pet is the same in both.
 
 | Folder | Speeds shown as | For |
 |---|---|---|
-| [`firmware/US-mph`](firmware/US-mph) | miles per hour | US |
-| [`firmware/EU-UK-metric`](firmware/EU-UK-metric) | kilometres per hour | EU, UK and everywhere else |
+| `US-mph` | miles per hour | US |
+| `EU-UK-metric` | kilometres per hour | EU, UK and everywhere else |
 
 Each folder has two files:
 
@@ -76,5 +87,5 @@ That's all you get.
 ## Credits
 
 * **LODESTAR ORION**: FEAR REACTIVE
-* **Wolf and splash**: created by Aries Thorne & Todd Steinhauer
+* **Pets and splash**: created by Aries Thorne & Todd Steinhauer
 * Based on [MeshCore](https://github.com/meshcore-dev/MeshCore) (MIT licence)
