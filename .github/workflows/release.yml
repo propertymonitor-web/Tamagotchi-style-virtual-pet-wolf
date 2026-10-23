@@ -41,4 +41,6 @@ jobs:
 
           Flash with https://flasher.meshcore.io (Custom Firmware). Checksums are in SHA256SUMS-$SP.txt.
 
+          Dashboard (watch the pet on a big screen) for LODESTAR ORION + Pet firmware: https://propertymonitor-web.github.io/lodestar_nova_alpha/ (Chrome or Edge, USB cable).
+
           Created by Aries Thorne & Todd Steinhauer. LODESTAR ORION by FEAR REACTIVE. Built on MeshCore."
