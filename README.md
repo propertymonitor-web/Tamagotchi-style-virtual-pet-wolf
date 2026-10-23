@@ -28,7 +28,8 @@ them all here. Where's the fun in that?
 
 ## What you need
 
-* A **Heltec V4** radio (the one with the OLED screen). The pet lives on that screen, so other boards won't show it.
+* A **Heltec V4** radio (the one with the OLED screen). **The Heltec V4 R2 is the only board that has been tested on real hardware.**
+* Files for other radios are in the same pet folders (see *Other radios* below). They compile, but they are **UNTESTED**.
 * A way to flash it: <https://flasher.meshcore.io> (choose **Custom Firmware**).
 * Optional, but half the fun: a friend with a second radio running the same firmware.
 
@@ -57,6 +58,24 @@ MeshCore app as usual.)
 4. When the radio restarts you will see the **ORION splash screen**, and then your wolf.
 
 Want to check your download? [`firmware/SHA256SUMS.txt`](firmware/SHA256SUMS.txt) has the checksums.
+
+## Other radios (UNTESTED)
+
+Only the **Heltec V4 R2** has been run on a real board. The boards below were built successfully but nobody has tried them yet, so please report what you see. Each board has its own folder inside each pet folder, for example `firmware/Fox/rak4631/US-mph/`.
+
+| Board | Folder | Screen | Files |
+|---|---|---|---|
+| Heltec V3 | `heltec-v3` | OLED | `fresh-install.bin`, `update.bin` |
+| LilyGo T3-S3 | `lilygo-t3s3` | OLED | `fresh-install.bin`, `update.bin` |
+| Heltec Wireless Tracker | `heltec-tracker` | colour | `fresh-install.bin`, `update.bin` |
+| Heltec Wireless Tracker V2 | `heltec-tracker-v2` | colour | `fresh-install.bin`, `update.bin` |
+| LilyGo T-Deck | `lilygo-tdeck` | colour (scaling not confirmed) | `fresh-install.bin`, `update.bin` |
+| RAK4631 | `rak4631` | OLED | `install-or-update.zip`, `full-image.hex` |
+| Heltec T114 | `heltec-t114` | colour | `install-or-update.zip`, `full-image.hex` |
+| Heltec T096 | `heltec-t096` | colour | `install-or-update.zip`, `full-image.hex` |
+| Ikoka Nano G2 Ultra | `nano-g2-ultra` | OLED | `install-or-update.zip`, `full-image.hex` |
+
+Colour screens draw the pet on a 128x64 canvas that is scaled up. The nRF52 boards (RAK, T114, T096, Nano G2 Ultra) use the `.zip` with the normal nRF52 update tools. Boards that do not fit: Heltec V2, LilyGo T-Beam SX1262 and T-LoRa V2.1 (out of memory) and Station G2 (too big for its flash).
 
 ## Using it
 

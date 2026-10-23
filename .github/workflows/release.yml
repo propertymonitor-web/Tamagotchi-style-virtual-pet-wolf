@@ -30,7 +30,7 @@ jobs:
         run: |
           UP=$(echo "$SP" | tr a-z A-Z)
           grep " $SP/" firmware/SHA256SUMS.txt > "SHA256SUMS-$SP.txt"
-          gh release create "$TAG" firmware/$SP/US-mph/*.bin firmware/$SP/EU-UK-metric/*.bin "SHA256SUMS-$SP.txt" \
+          gh release create "$TAG" $(find firmware/$SP -type f ! -name '*.md' | sort) "SHA256SUMS-$SP.txt" \
             --title "Virtual Pet $SP $TAG (LODESTAR ORION, Heltec V4)" \
             --notes "A pocket $SP on a LODESTAR ORION radio. Heltec V4 (OLED) only.
 
