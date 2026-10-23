@@ -12,9 +12,20 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 | 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.3.1-alpha` |
 | 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.3.1-alpha` |
 | 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.3.1-alpha` |
+| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.4.0-alpha` |
+| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.4.0-alpha` |
+| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.4.0-alpha` |
+| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.4.0-alpha` |
+| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.4.0-alpha` |
+| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.4.0-alpha` |
+| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.4.0-alpha` |
 
 Each pet only talks to its own kind, so a fox never confuses a wolf, and a crocodile never mistakes an alligator for family. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
+
+**Eggs.** The dragon, griffin and phoenix start as an egg that hatches after 24 to 48 hours of the radio being switched on (it varies per pet). The **Mystery Egg** hatches
+into a surprise: one of the pets above, picked from your radio's identity, so you get the same one every time you reflash it. Eggs only count time while the radio is powered on.
+Only the Heltec V4 R2 has been tested; the new pets are untested on other boards.
 
 A pet starts small. Look after it, keep your radio on, and see who it grows up to be.
 No two wolves look alike, and it has a few surprises of its own. We're not going to list
