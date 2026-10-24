@@ -16,10 +16,10 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 | 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.7.0-alpha` |
 | 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.7.0-alpha` |
 | 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.7.0-alpha` |
-| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.7.0-alpha` |
+| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.7.1-alpha` |
 | 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.7.0-alpha` |
 | 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v0.7.0-alpha` |
-| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.7.0-alpha` |
+| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.7.1-alpha` |
 
 Every kind of pet can drop in on every other kind, so a fox might visit a wolf and a dragon might call on a pig. Families are another matter: pets only start a family with their own kind. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
