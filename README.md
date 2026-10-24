@@ -133,6 +133,17 @@ That's all you get.
 * Visits between wolves only happen between radios that can hear each other directly, both running this firmware.
 * This is an early release. Found a bug, or a wolf behaving strangely? Please open an issue and tell us what your wolf was doing.
 
+## Mesh Analyzer builds
+
+Two versions of LODESTAR ORION that add a live **Mesh Analyzer** to the dashboard: every packet the radio hears is drawn as it arrives (signal strength, clarity, noise floor, packet types, hops, who it came from), and you can save it all as a CSV.
+
+| Build | Folder | Release |
+| --- | --- | --- |
+| ORION + Mesh Analyzer (no pet) | [`firmware/Mesh-Analyzer`](firmware/Mesh-Analyzer) | `mesh-analyzer-v0.8.0-alpha` |
+| ORION + Mystery Egg + Mesh Analyzer | [`firmware/Mystery-Mesh-Analyzer`](firmware/Mystery-Mesh-Analyzer) | `mystery-mesh-analyzer-v0.8.0-alpha` |
+
+Open the dashboard at https://propertymonitor-web.github.io/lodestar_nova_alpha/ (Chrome or Edge, USB cable). The Mesh Analyzer panel appears by itself when the radio has this firmware.
+
 ## What's new in 0.7.0
 
 * The Mystery Egg radio has a few more surprises in store.

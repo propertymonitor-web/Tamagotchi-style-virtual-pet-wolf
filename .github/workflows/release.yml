@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       species:
-        description: "Folder name: Wolf, Fox, Cat, Bear, Pig, Alligator, Crocodile, Butterfly, Donkey, Unicorn, Dragon, Kitsune, Griffin, Phoenix, Horse or Mystery"
+        description: "Folder name: Wolf, Fox, Cat, Bear, Pig, Alligator, Crocodile, Butterfly, Donkey, Unicorn, Dragon, Kitsune, Griffin, Phoenix, Horse, Mystery, Mesh-Analyzer or Mystery-Mesh-Analyzer"
         required: true
         type: string
       tag:
@@ -29,10 +29,11 @@ jobs:
           SP: ${{ inputs.species }}
         run: |
           UP=$(echo "$SP" | tr a-z A-Z)
+          case "$SP" in *Analyzer) TITLE="LODESTAR ORION $SP $TAG"; WHAT="LODESTAR ORION with the live Mesh Analyzer on the dashboard";; *) TITLE="Virtual Pet $SP $TAG (LODESTAR ORION, Heltec V4)"; WHAT="A pocket $SP on a LODESTAR ORION radio. Heltec V4 (OLED) only";; esac
           grep " $SP/" firmware/SHA256SUMS.txt > "SHA256SUMS-$SP.txt"
           gh release create "$TAG" $(find firmware/$SP -type f ! -name '*.md' | sort) "SHA256SUMS-$SP.txt" \
-            --title "Virtual Pet $SP $TAG (LODESTAR ORION, Heltec V4)" \
-            --notes "A pocket $SP on a LODESTAR ORION radio. Heltec V4 (OLED) only.
+            --title "$TITLE" \
+            --notes "$WHAT.
 
           Which file?
           - US (miles per hour): ORION-${UP}_US-mph_...
