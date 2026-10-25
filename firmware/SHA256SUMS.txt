@@ -478,6 +478,10 @@ a0bfdd85121ad7d2a2aece4b0d92944ff8a291c40cfc72d3c8affc70e6bad886  Mesh-Analyzer/
 a9e7c8c0dcc71c34134e72e3ebcaa3fcc2da8619f6eb4d8571314ad5f2e83305  Mesh-Analyzer/rak4631/EU-UK-metric/ORION-MESH-ANALYZER_EU-UK-metric_rak4631_install-or-update.zip
 0ff90b40ebb2588b066af59877a8b0e4e98b9c21f3ca392b91020b5e59374c51  Mesh-Analyzer/rak4631/US-mph/ORION-MESH-ANALYZER_US-mph_rak4631_full-image.hex
 5c7f3dcc41375976054d5108afc85a731d8aec2ce33d09c7870f78724b99e482  Mesh-Analyzer/rak4631/US-mph/ORION-MESH-ANALYZER_US-mph_rak4631_install-or-update.zip
+8387c99b91520a6d03da3fff2fecc46983ec2bd9c9a4f299bfe8f1093072b738  Mystery-Mesh-Analyzer-R8/EU-UK-metric/ORION-MYSTERY-MESH-ANALYZER-R8_EU-UK-metric_heltec-v4-r8_fresh-install.bin
+1606180bd2363c1c891a6bbf8a0fdf330ac8856a5522298b8557e6e51684db7a  Mystery-Mesh-Analyzer-R8/EU-UK-metric/ORION-MYSTERY-MESH-ANALYZER-R8_EU-UK-metric_heltec-v4-r8_update.bin
+45587b586fccaf7d3b624633e46237529cc4bfed1bfdb55f2b51829a98bfc794  Mystery-Mesh-Analyzer-R8/US-mph/ORION-MYSTERY-MESH-ANALYZER-R8_US-mph_heltec-v4-r8_fresh-install.bin
+bc8ba3613ab4cb039300a14ea7b7e4c3c9eeb9f9ef7e256a7eb30f1d53148c6d  Mystery-Mesh-Analyzer-R8/US-mph/ORION-MYSTERY-MESH-ANALYZER-R8_US-mph_heltec-v4-r8_update.bin
 6d745871b170d7796093b7a07adfa1085fc3c5959e89560cf407dc770f6c5fa9  Mystery-Mesh-Analyzer/EU-UK-metric/ORION-MYSTERY-MESH-ANALYZER_EU-UK-metric_heltec-v4_fresh-install.bin
 4094193afd5316febbf98656b09249013d60005bfe391c9b9c7137929706dc2a  Mystery-Mesh-Analyzer/EU-UK-metric/ORION-MYSTERY-MESH-ANALYZER_EU-UK-metric_heltec-v4_update.bin
 d56a21ecb476aa290b876ff47eb271bbe4949be9bbf39449c18a43665227ceda  Mystery-Mesh-Analyzer/US-mph/ORION-MYSTERY-MESH-ANALYZER_US-mph_heltec-v4_fresh-install.bin

@@ -141,6 +141,7 @@ Two versions of LODESTAR ORION that add a live **Mesh Analyzer** to the dashboar
 | --- | --- | --- |
 | ORION + Mesh Analyzer (no pet) | [`firmware/Mesh-Analyzer`](firmware/Mesh-Analyzer) | `mesh-analyzer-v0.8.0-alpha` |
 | ORION + Mystery Egg + Mesh Analyzer | [`firmware/Mystery-Mesh-Analyzer`](firmware/Mystery-Mesh-Analyzer) | `mystery-mesh-analyzer-v0.8.0-alpha` |
+| ORION + Mystery Egg + Mesh Analyzer for the **Heltec V4-R8** | [`firmware/Mystery-Mesh-Analyzer-R8`](firmware/Mystery-Mesh-Analyzer-R8) | `mystery-mesh-analyzer-r8-v0.8.0-alpha` |
 
 Open the dashboard at https://propertymonitor-web.github.io/lodestar_nova_alpha/ (Chrome or Edge, USB cable). The Mesh Analyzer panel appears by itself when the radio has this firmware. Each folder has a README that explains every graph and how to use it: [Mesh-Analyzer](firmware/Mesh-Analyzer/README.md), [Mystery-Mesh-Analyzer](firmware/Mystery-Mesh-Analyzer/README.md).
 
