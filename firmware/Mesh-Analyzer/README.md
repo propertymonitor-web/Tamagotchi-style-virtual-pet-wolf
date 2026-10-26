@@ -2,6 +2,8 @@
 
 LODESTAR ORION with no pet and a live Mesh Analyzer on the dashboard. The same radio features as ORION, plus a way to see everything your radio hears.
 
+**Heltec V4-R8:** the `heltec-v4-r8` folder holds the build for the V4-R8 board (ESP32-S3R8, 8 MB PSRAM). The R8 uses different pins for GPS, the LED and external power than the V4 R2, so use the R2 files on an R2 and the `heltec-v4-r8` files on an R8. Never power the radio without an antenna.
+
 ## What you get
 
 A **Mesh Analyzer** panel on the dashboard. The radio reports every packet it hears or sends, and the page draws it live:
@@ -36,7 +38,7 @@ Buttons: **Show** picks the time window (1 minute, 5 minutes, 15 minutes, 1 hour
 - The analyzer shows what the radio **decodes**. Packets lost in noise are not counted, so a quiet graph can mean a quiet mesh or a poor signal. Compare with the noise floor.
 - "Heard from" is the last repeater on the packet's path, or the sender itself for a direct advert. It is the neighbour you actually receive, not necessarily the person who wrote the message.
 - The channel-busy figure is an estimate from packet length and your spreading factor and bandwidth, not a measurement.
-- This is an alpha build. The radio's own screen, messages and GPS features work as in LODESTAR ORION; the analyzer only adds the data stream.
+- This is a beta build. The radio's own screen, messages and GPS features work as in LODESTAR ORION; the analyzer only adds the data stream.
 - Needs a Heltec V4 or another supported radio from this folder. The radio and the dashboard talk over USB, so Bluetooth to a phone still works as before while you are not connected to the dashboard.
 
 ## CSV columns

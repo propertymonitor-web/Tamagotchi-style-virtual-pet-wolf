@@ -4,22 +4,22 @@ A tiny pet that lives on your **LODESTAR ORION** radio. Pick one:
 
 | Pet | Folder | Release |
 |---|---|---|
-| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v0.7.0-alpha` |
-| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v0.7.0-alpha` |
-| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v0.7.0-alpha` |
-| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v0.7.0-alpha` |
-| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v0.7.0-alpha` |
-| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v0.7.0-alpha` |
-| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v0.7.0-alpha` |
-| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v0.7.0-alpha` |
-| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v0.7.0-alpha` |
-| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v0.7.0-alpha` |
-| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v0.7.0-alpha` |
-| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v0.7.0-alpha` |
-| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v0.7.1-alpha` |
-| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v0.7.0-alpha` |
-| 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v0.7.0-alpha` |
-| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v0.7.1-alpha` |
+| 🐺 **Wolf** | [`firmware/Wolf`](firmware/Wolf) | `wolf-v1.0.0-beta-UD21214` |
+| 🦊 **Fox** | [`firmware/Fox`](firmware/Fox) | `fox-v1.0.0-beta-UD21214` |
+| 🐱 **Cat** | [`firmware/Cat`](firmware/Cat) | `cat-v1.0.0-beta-UD21214` |
+| 🐻 **Bear** | [`firmware/Bear`](firmware/Bear) | `bear-v1.0.0-beta-UD21214` |
+| 🐷 **Pig** | [`firmware/Pig`](firmware/Pig) | `pig-v1.0.0-beta-UD21214` |
+| 🐊 **Alligator** | [`firmware/Alligator`](firmware/Alligator) | `alligator-v1.0.0-beta-UD21214` |
+| 🐊 **Crocodile** | [`firmware/Crocodile`](firmware/Crocodile) | `crocodile-v1.0.0-beta-UD21214` |
+| 🦋 **Butterfly** | [`firmware/Butterfly`](firmware/Butterfly) | `butterfly-v1.0.0-beta-UD21214` |
+| 🫏 **Donkey** | [`firmware/Donkey`](firmware/Donkey) | `donkey-v1.0.0-beta-UD21214` |
+| 🦄 **Unicorn** | [`firmware/Unicorn`](firmware/Unicorn) | `unicorn-v1.0.0-beta-UD21214` |
+| 🐉 **Dragon** (starts as an egg) | [`firmware/Dragon`](firmware/Dragon) | `dragon-v1.0.0-beta-UD21214` |
+| 🦊 **Kitsune** | [`firmware/Kitsune`](firmware/Kitsune) | `kitsune-v1.0.0-beta-UD21214` |
+| 🦅 **Griffin** (starts as an egg) | [`firmware/Griffin`](firmware/Griffin) | `griffin-v1.0.0-beta-UD21214` |
+| 🔥 **Phoenix** (starts as an egg) | [`firmware/Phoenix`](firmware/Phoenix) | `phoenix-v1.0.0-beta-UD21214` |
+| 🐴 **Horse** | [`firmware/Horse`](firmware/Horse) | `horse-v1.0.0-beta-UD21214` |
+| 🥚 **Mystery Egg** | [`firmware/Mystery`](firmware/Mystery) | `mystery-v1.0.0-beta-UD21214` |
 
 Every kind of pet can drop in on every other kind, so a fox might visit a wolf and a dragon might call on a pig. Families are another matter: pets only start a family with their own kind. Every one is different in its own way, and the
 butterfly in particular has a long way to go before it's a butterfly.
@@ -139,11 +139,17 @@ Two versions of LODESTAR ORION that add a live **Mesh Analyzer** to the dashboar
 
 | Build | Folder | Release |
 | --- | --- | --- |
-| ORION + Mesh Analyzer (no pet) | [`firmware/Mesh-Analyzer`](firmware/Mesh-Analyzer) | `mesh-analyzer-v0.8.0-alpha` |
-| ORION + Mystery Egg + Mesh Analyzer | [`firmware/Mystery-Mesh-Analyzer`](firmware/Mystery-Mesh-Analyzer) | `mystery-mesh-analyzer-v0.8.0-alpha` |
-| ORION + Mystery Egg + Mesh Analyzer for the **Heltec V4-R8** | [`firmware/Mystery-Mesh-Analyzer-R8`](firmware/Mystery-Mesh-Analyzer-R8) | `mystery-mesh-analyzer-r8-v0.8.0-alpha` |
+| ORION + Mesh Analyzer (no pet) | [`firmware/Mesh-Analyzer`](firmware/Mesh-Analyzer) | `mesh-analyzer-v1.0.0-beta-UD21214` |
+| ORION + Mystery Egg + Mesh Analyzer | [`firmware/Mystery-Mesh-Analyzer`](firmware/Mystery-Mesh-Analyzer) | `mystery-mesh-analyzer-v1.0.0-beta-UD21214` |
 
 Open the dashboard at https://propertymonitor-web.github.io/lodestar_nova_alpha/ (Chrome or Edge, USB cable). The Mesh Analyzer panel appears by itself when the radio has this firmware. Each folder has a README that explains every graph and how to use it: [Mesh-Analyzer](firmware/Mesh-Analyzer/README.md), [Mystery-Mesh-Analyzer](firmware/Mystery-Mesh-Analyzer/README.md).
+
+## What's new in 1.0.0 beta
+
+* **Everything is beta now.** Every release in this repository ends in `-UD21214` so you can tell the current builds from the old alpha ones.
+* **Dashboard security fix.** The dashboard page no longer accepts anything from the radio's data that could be turned into page code. It is fixed on the live page (https://propertymonitor-web.github.io/lodestar_nova_alpha/). Thanks to a tester for finding it.
+* **Heltec V4-R8.** The two Mesh Analyzer builds now include a `heltec-v4-r8` folder with files for the V4-R8 board.
+* Pet names and kinds on the top line, the redrawn Griffin, and every pet visiting every other pet are all included. Updating with the `update` file keeps your pet.
 
 ## What's new in 0.7.0
 
