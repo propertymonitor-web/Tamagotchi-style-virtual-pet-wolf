@@ -33,7 +33,7 @@ No two wolves look alike, and it has a few surprises of its own. We're not going
 them all here. Where's the fun in that?
 
 > A LoRa mesh radio, a pocket pet, and a bit of mystery.
-> Built on [MeshCore](https://github.com/meshcore-dev/MeshCore) · **LODESTAR ORION** by FEAR REACTIVE
+> Built on [MeshCore](https://github.com/meshcore-dev/MeshCore) · **LODESTAR ORION** by Wolf Reactive Systems (WRS)
 > Created by **Aries Thorne & Todd Steinhauer**
 
 ---
@@ -193,6 +193,6 @@ Open the dashboard at https://propertymonitor-web.github.io/lodestar_nova_alpha/
 
 ## Credits
 
-* **LODESTAR ORION**: FEAR REACTIVE
+* **LODESTAR ORION**: Wolf Reactive Systems (WRS)
 * **Pets and splash**: created by Aries Thorne & Todd Steinhauer
 * Based on [MeshCore](https://github.com/meshcore-dev/MeshCore) (MIT licence)

@@ -45,4 +45,4 @@ Buttons: **Show** picks the time window (1 minute, 5 minutes, 15 minutes, 1 hour
 
 `time, direction (heard or sent), type, rssi_dbm, snr_db, hops, length_bytes, heard_from, origin_hash`
 
-Made by Aries Thorne & Todd Steinhauer. LODESTAR ORION by FEAR REACTIVE. Built on MeshCore.
+Made by Aries Thorne & Todd Steinhauer. LODESTAR ORION by Wolf Reactive Systems (WRS). Built on MeshCore.
